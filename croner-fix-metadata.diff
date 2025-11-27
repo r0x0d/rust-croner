@@ -1,14 +1,5 @@
 --- croner-3.0.1/Cargo.toml	1970-01-01T00:00:01+00:00
-+++ croner-3.0.1/Cargo.toml	2025-11-27T21:01:50.982993+00:00
-@@ -19,7 +19,7 @@
- autoexamples = false
- autotests = false
- autobenches = false
--description = "Fully-featured, lightweight, and efficient Rust library designed for parsing and evaluating cron patterns"
-+description = "Rust library designed for parsing and evaluating cron patterns"
- homepage = "https://github.com/hexagon/croner-rust"
- documentation = "https://docs.rs/croner"
- readme = "README.md"
++++ croner-3.0.1/Cargo.toml	2025-11-27T21:45:05.896996+00:00
 @@ -80,10 +80,7 @@
  features = ["derive"]
  
@@ -17,7 +8,7 @@
 -
 -[dev-dependencies.criterion]
 -version = "0.7.0"
-+version = ">=0.10,<=0.13"
++version = ">=0.10,<0.13"
  
  [dev-dependencies.rstest]
  version = "0.26.1"

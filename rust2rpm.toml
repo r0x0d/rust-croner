@@ -1,0 +1,9 @@
+[package]
+summary = "Rust library designed for parsing and evaluating cron patterns"
+	
+cargo-toml-patch-comments = [
+    "relax chrono-tz dependency from 0.10.4 to >=0.10,<0.13",
+    "drop criterion dependency",
+]
+	
+ 

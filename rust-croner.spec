@@ -13,12 +13,15 @@ License:        MIT
 URL:            https://crates.io/crates/croner
 Source:         %{crates_source}
 # Manually created patch for downstream crate metadata changes
+# * relax chrono-tz dependency from 0.10.4 to >=0.10,<0.13
+# * drop criterion dependency
 Patch:          croner-fix-metadata.diff
 
 BuildRequires:  cargo-rpm-macros >= 24
 
 %global _description %{expand:
-Rust library designed for parsing and evaluating cron patterns.}
+Fully-featured, lightweight, and efficient Rust library designed for
+parsing and evaluating cron patterns.}
 
 %description %{_description}
 
