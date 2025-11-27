@@ -1,5 +1,5 @@
 --- croner-3.0.1/Cargo.toml	1970-01-01T00:00:01+00:00
-+++ croner-3.0.1/Cargo.toml	2025-11-27T20:57:08.148995+00:00
++++ croner-3.0.1/Cargo.toml	2025-11-27T21:01:50.982993+00:00
 @@ -19,7 +19,7 @@
  autoexamples = false
  autotests = false
@@ -9,3 +9,15 @@
  homepage = "https://github.com/hexagon/croner-rust"
  documentation = "https://docs.rs/croner"
  readme = "README.md"
+@@ -80,10 +80,7 @@
+ features = ["derive"]
+ 
+ [dev-dependencies.chrono-tz]
+-version = "0.10.4"
+-
+-[dev-dependencies.criterion]
+-version = "0.7.0"
++version = ">=0.10,<=0.13"
+ 
+ [dev-dependencies.rstest]
+ version = "0.26.1"
